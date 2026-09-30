@@ -1,0 +1,157 @@
+/* General Page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fff4c2
+    );
+
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background: white;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Heading */
+h1 {
+    color: #d94f8a;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+button {
+    background-color: #d94f8a;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 15px 30px;
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #b8326b;
+    transform: scale(1.05);
+}
+
+/* Hidden Tribute */
+.tribute {
+    display: none;
+
+    margin-top: 35px;
+    padding: 25px;
+
+    background-color: #fff7fb;
+    border-radius: 20px;
+
+    animation: fadeIn 1s ease;
+}
+
+/* Teacher Image */
+.teacher-img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid #f3a6c8;
+
+    margin-bottom: 20px;
+}
+
+/* Message Heading */
+h2 {
+    color: #d94f8a;
+}
+
+/* Message */
+.message {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Song Heading */
+h3 {
+    color: #c76b98;
+    margin-top: 25px;
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Song Text */
+.song-text {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+
+    .container {
+        width: 75%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .teacher-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+}
